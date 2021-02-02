@@ -3,11 +3,12 @@ Algoritmo sin_titulo
 	Leer num
 	Si num=0 
 		escribir" es cero"
+	FinSi
 	Si num<0 
 		Escribir "es negativo"
-	Si num0 " es positivo"
+	FinSi
+	Si num>0 
 		escribir" es positivo"
 		FinSi
 	
-	FinSi
 FinAlgoritmo
