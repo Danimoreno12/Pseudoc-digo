@@ -5,11 +5,11 @@ Algoritmo sin_titulo
 	Escribir "Si necesitas un tecnico pulse 3"
 	Leer a
 	Segun a Hacer
-		a=1: 
+		1: 
 			Escribir "Llame al 123 456 789"
-		a=2:
+		2:
 			Escribir "En un segundo miramos el servidor. Su petición ha sido enviada"
-		a=3:
+		3:
 			Escribir " Describenos el problelma y mandaremos a un tecnico"
 			Leer b
 			Escribir " Su petición ha sido realizada"
