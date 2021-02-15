@@ -1,16 +1,16 @@
 Algoritmo sin_titulo
-	Escribir 'Dime numeros'
-	Leer num
-	suma <- 0
-	producto <- 1
+	su <- 0
+	pro <- 1
 	Para i<-1 Hasta 10 Hacer
-		leer num 
-		Si num>0
-			Escribir suma=suma+num
-		Sino
-			Escribir producto= producto*num
+		Escribir 'Dime numeros'
+		Leer num
+		Si num>0 Entonces
+			su=su+num
+		SiNo
+			pro=pro*num
 		FinSi
 		
 	FinPara
+	Escribir "El resultado del producto es " pro
+	Escribir "El resultado de la suma es " su
 FinAlgoritmo
-
