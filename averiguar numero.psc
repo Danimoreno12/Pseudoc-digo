@@ -4,13 +4,15 @@ Algoritmo sin_titulo
 		Escribir 'Voy a pensar un número del 0 al 10; intenta adivinarlo'
 		Escribir 'Digame su propuesta'
 		Leer num
-		Si num=averi Entonces
-			Escribir ' Es este, muy bien'
-		FinSi
 		Si num>averi Entonces
 			Escribir 'Es mas bajo'
 		SiNo
-			Escribir 'Es mas alto'
+			Si num=averi Entonces
+				Escribir ' Es este, muy bien'
+			Sino
+					
+				Escribir 'Es mas alto'
+			FinSi
 		FinSi
 	FinMientras
 FinAlgoritmo
