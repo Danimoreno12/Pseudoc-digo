@@ -1,10 +1,15 @@
-Funcion  numAFormatear (numAFormatear,tamañoMaximo)
-	
+Funcion espacio ( numeroAFormatear, tamanoMaximo )
+	Para I=1 Hasta tamanoMaximo-Longitud(numeroAFormatear) Hacer
+		
+		escribir " " Sin Saltar
+	FinPara
+	Escribir numeroAFormatear
 Fin Funcion
-Algoritmo sin_titulo
-	Escribir "Dime un numero"
-	Leer num
-	Para num<-i Hasta num Hacer
-		Escribir "El numero es " Sin Saltar 
-	Fin Para
+
+
+Algoritmo espacios
+	Escribir " diga unos numeros"
+	Leer numeroAFormatear, tamanoMaximo
+	espacio(numeroAFormatear, tamanoMaximo)
+	
 FinAlgoritmo
