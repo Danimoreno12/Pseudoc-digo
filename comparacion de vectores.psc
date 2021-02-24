@@ -1,10 +1,15 @@
 Algoritmo sin_titulo
-	Escribir "Dime la dimesion del vector"
-	Leer a
-	Dimensión vector(a)
-	Para i<-1 Hasta a   Hacer
-		
-		Escribir azar(100)
+	Dimension vector(10)
+	max=-200000
+	Para i<-1 Hasta 10 Hacer
+		vector(i)= Aleatorio(1,10)
+		Escribir vector(i)
 	Fin Para
-	Escribir "El numero mas grande es " vector(a)>vector(a)
+	Para i<-1 hasta 10
+		
+		Si vector(i)>max entonces 
+			Escribir max
+			
+		FinSi
+	FinPara
 FinAlgoritmo
