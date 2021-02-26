@@ -1,0 +1,39 @@
+Algoritmo sin_titulo
+	minimo=100000000
+	minimo1=100000000
+	
+	
+	Escribir "Dime valores para el vector A"
+	Dimension vecA[10]
+	Para i<-1 Hasta 10  Hacer
+		Leer vectorA
+		vecA(i)=vectorA
+		Si vecA(i)<minimo Entonces
+			minimo=vecA(i)
+		Fin Si
+	Fin Para
+	escribir"El minimo del vector A es " minimo Sin Saltar ", "
+	
+	Escribir "Dime valores para el vector B"
+	Dimension vecB[10]
+	Para i<-1 Hasta 10  Hacer
+		Leer vectorB
+		vecB(i)=vectorB
+		Si vecB(i)<minimo1 Entonces
+			minimo1=vecB(i)
+		Fin Si
+	Fin Para
+	Escribir"El minimo del vector B es " minimo1 
+	
+	
+	Dimension vectorC[10]
+	Para i<-1 Hasta 10  Hacer
+		Si minimo<minimo1 Entonces
+			VecC=minimo1
+		SiNo
+			VecC=minimo
+		FinSi
+		vectorC(i)=VecC  
+	Fin Para
+	Escribir"El vector C es " vectorC(i) Sin Saltar ", "
+FinAlgoritmo
