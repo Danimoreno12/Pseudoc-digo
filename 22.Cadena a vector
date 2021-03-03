@@ -5,7 +5,7 @@ Algoritmo sin_titulo
 	Para i<-1 Hasta Longitud(frase) Hacer
 		comparar=SubCadena(frase,i,i)
 		vector(i)=comparar
-		Escribir vector(comparar)
+		Escribir vector(i) 
 	Fin Para
 	
 	
