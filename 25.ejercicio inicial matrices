@@ -1,0 +1,12 @@
+Algoritmo sin_titulo
+	Escribir "Dime el numero de filas"
+	Leer fil
+	Escribir "Dime el numero de columnas"
+	leer columna
+	Dimension a(fil,columna)
+	
+	Para i<-1 Hasta a(fil,columna) Hacer
+		a(i,i)=Aleatorio(1,10) 
+	Fin Para
+	Escribir a[fil,columna]  Sin Saltar " "
+FinAlgoritmo
