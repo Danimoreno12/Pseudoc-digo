@@ -1,12 +1,26 @@
-Algoritmo sin_titulo
-	Escribir "Dime el numero de filas"
-	Leer fil
-	Escribir "Dime el numero de columnas"
-	leer columna
-	Dimension a(fil,columna)
+Funcion rellenarMatriz (matriz,filas,columnas)
+	para i=1 hasta filas
+		para j=1 hasta columnas
+			matriz[i,j]=Aleatorio(0,10)
+		FinPara
+	FinPara
+Fin Funcion
+Funcion imprimirMatriz(matriz,filas,columnas)
+	para i=1 hasta filas
+		para j=1 hasta columnas
+			Escribir matriz[i,j] " " Sin Saltar
+		FinPara
+		escribir ""
+	FinPara
+Fin Funcion
+
+Algoritmo rellenar_matriz
+	Escribir "dame las filas"
+	leer filas
+	Escribir "dame las columnas"
+	leer columnas
+	Dimension matriz[filas,columnas]
 	
-	Para i<-1 Hasta a(fil,columna) Hacer
-		a(i,i)=Aleatorio(1,10) 
-	Fin Para
-	Escribir a[fil,columna]  Sin Saltar " "
+	rellenarMatriz(matriz,filas,columnas)
+	imprimirMatriz(matriz,filas,columnas)
 FinAlgoritmo
