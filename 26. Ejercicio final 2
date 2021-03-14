@@ -1,0 +1,45 @@
+Funcion rellenarMatriz (matriz,filas,columnas)
+	para i=1 hasta filas
+		para j=1 hasta columnas
+			matriz[i,j]=Aleatorio(7,38)
+		FinPara
+	FinPara
+Fin Funcion
+Funcion imprimirMatriz(matriz,filas,columnas)
+	para i=1 hasta filas
+		para j=1 hasta columnas
+			Escribir matriz[i,j] " " Sin Saltar
+		FinPara
+		escribir ""
+	FinPara
+Fin Funcion
+
+Algoritmo rellenar_matriz
+	Escribir "dime el numero de las semanas del mes que quieres ver "
+	leer filas
+	Escribir "dime el numero de dias de las semanas anteriores que desea observar"
+	leer columnas
+	Dimension matriz[filas,columnas]
+	rellenarMatriz(matriz,filas,columnas)
+	imprimirMatriz(matriz,filas,columnas)
+	
+	Repetir
+		Escribir "Si observas algun fallo pulse 1 si esta correcto pulse 2"
+		Leer respuesta
+		
+		Si respuesta=1 Entonces
+			Escribir "En que semana se encuentra el fallo"
+			leer fallo1
+			Escribir "En que dia de la semana se encuentra el fallo"
+			Leer fallo2
+			Escribir "Cual es la respuesta correcta"
+			Leer rea
+			matriz(fallo1,fallo2)=rea
+			imprimirMatriz(matriz,filas,columnas)
+		SiNo
+			
+			Fin si 
+	Hasta Que respuesta=2
+	
+	Escribir "Gracias por comprobar nuestra tablas de temperaturas diarias. Le esperamos pronto por aquí"
+FinAlgoritmo
